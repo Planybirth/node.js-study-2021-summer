@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>17개의 CSS2 색이름과 색</title>
+    <style>
+        div {
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>17개의 CSS2 색이름과 색</h2>
+    <hr>
+    <script>
+        document.write("<table>");
+        document.write("<tbody>");
+        document.write("<tr>");
+        var colors =
+            ['maroon', 'red', 'orange', 'yellow', 'olive', 'purple', 'fuchsia', 'white',
+                'lime', 'green', 'navy', 'blue', 'aqua', 'teal', 'black', 'silver', 'gray'];
+        for (let i = 0; i < colors.length; i++) {
+            document.write("<td>");
+            document.write("<div style='background-color:" + colors[i] +
+                "'> " + colors[i] + "</div>");
+            document.write("</td>");
+        }
+        document.write("</tr>");
+        document.write("</tbody>");
+        document.write("</table>");
+    </script>
+</body>
+
+</html>

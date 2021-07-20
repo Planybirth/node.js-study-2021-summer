@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> document.write()</title>
+    <script>
+        function row1() {
+            document.write("<tr>");
+            document.write("<td>");
+            document.write("n");
+            document.write("</td>");
+            for (let j = 0; j < 10; j++) {
+                document.write("<td>");
+                document.write(j);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+        function row2() {
+            document.write("<tr>");
+            document.write("<td>");
+            document.write("n<sup>2</sup>");
+            document.write("</td>");
+            for (let j = 0; j < 10; j++) {
+                document.write("<td>");
+                document.write(j * j);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+        }
+    </script>
+</head>
+
+<body>
+    <h2>document.write()로 표만들기</h2>
+    <hr>
+    <script>
+        document.write("<table border='1'>");
+        document.write("<tbody>");
+
+        row1();
+        row2();
+
+        document.write("<tbody>");
+        document.write("</table>");
+    </script>
+</body>
+
+</html>
