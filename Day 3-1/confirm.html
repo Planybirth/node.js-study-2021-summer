@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>confrim</title>
+</head>
+<body>
+    <h3>confrim 활용</h3>
+    <hr>
+    <script>
+        // 전송할까요? 확인, 취소
+        // confirm을 이용해서 사용한다.
+        let ret = confirm("전송할까요?");
+        if(ret == true) {
+            // 사용자가 확인 버튼을 누른 경우
+            document.write("<h1>확인버튼을 눌렀습니다.</h1>");
+        } else {
+            document.write("<h1>취소버튼을 눌렀습니다.</h1>");
+        }
+        
+        alert("클릭했습니다.");
+    </script>
+</body>
+</html>

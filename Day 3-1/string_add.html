@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문자열 연산</title>
+</head>
+<body>
+    <h3>문자열 연산</h3>
+    <hr>
+    <script>
+        document.write("abc" + 23 + "<br>"); // doc.write에서는 모든 것이 문자로 들어가므로 23도 "23"으로 취급된다.
+        document.write(23 + "abc" + "<br>");
+        document.write(23 + "35" + "<br>");
+        document.write(23 + 35 + "<br>");
+        document.write(23 + 35 + "abc" + "<br>");
+        document.write("abc" + 23 + 35 + "<br><hr>"); // 어떻게든 문자열 요소로 본다.
+        var name = "kitae";
+        document.write(name == "kitae");
+        document.write("<br>");
+        document.write(name > "park");
+    </script>
+</body>
+</html>

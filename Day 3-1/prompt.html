@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>document.write() 활용</title>
+</head>
+<body>
+    <h3>document.write() 활용</h3>
+    <hr>
+    <script>
+        // int, float, char, double, long, long long, short, bool - 자바스크립트는 다 필요없어
+        // var, let, const
+        // let : {}(코드 블록)을 신경쓰고, 또 순서를 신경 좀 쓴 변수(요즘은 이걸 더 많이 쓰고 더 권장된다.)
+        // const : 안 변하는 변수(상수)
+
+        let ret = prompt("이름을 입력하세요.", "차승철");
+        if(ret == null) {
+            // 취소 버튼이나 다이얼로그를 닫은 경우
+        } else if(ret == "") {
+            // 문자열 입력 없이 확인 버튼을 누른 경우
+        } else {
+            document.write("<h1>" + ret + "님 어서오세요</h1>");
+        }
+    </script>
+</body>
+</html>
